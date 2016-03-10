@@ -423,7 +423,7 @@ if (isset($_POST['name_archivo']))
                                                          <li><?=$value?></li>
                                                         <?php endforeach;?>
                                                     </ul>
-                                            <?}?>
+                                            <?php }?>
                                                 
                                             </div>
                                         <?php } ?>
@@ -1538,7 +1538,7 @@ if (isset($_POST['name_archivo']))
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <?}?>
+                                                <?php }?>
 
                                                 <?php if (strtoupper($accion) == "USUARIOS") {?>
 
@@ -1842,7 +1842,7 @@ if (isset($_POST['name_archivo']))
                                                     </div>
                                                     
                                                 </div>
-                                                <?}?>
+                                                <?php }?>
                                                 <?php if (strtoupper($accion) == "PRODUCTOSPARRILLA") {?>
                                                 <div class="row">
                                                     <div class="col-lg-6">

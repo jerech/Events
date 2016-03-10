@@ -101,6 +101,10 @@ switch(strtoupper($accion))
 				$aAsistentes=$objAsistente->buscar2($aWhere,$aOrWhere,"0","20","a.id","DESC");	
 			else
 				$aAsistentes=$objAsistente->buscar2($aWhere,$aOrWhere,$page*20,"20","a.id","DESC");	*/
+			if ($oUsuario->getRol_numero()!=SUPERADMIN)
+			{
+				$aWhere['a.empresa_numero']=$oUsuario->getEmpresa_numero();
+			}
 			$aAsistentes=$objAsistente->buscar2($aWhere,$aOrWhere);
 			$aAsistentesCount=$objAsistente->buscar2($aWhere);
 

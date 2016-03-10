@@ -74,7 +74,7 @@
                             {
                                 ?>
                                  <a href="<?=BASE_URL;?><?=$objeto->getDestino();?>"><?=$objeto->getIcono();?><span class="nav-label"><?=$objeto->getNombre();?></span> <span class="fa arrow"></span></a>
-                                <?
+                                <?php
                                 $i=0;
                                 foreach($aSubMenus as $subobjeto)
                                 {
